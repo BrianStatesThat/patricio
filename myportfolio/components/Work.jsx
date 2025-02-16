@@ -12,7 +12,7 @@ const Work = () => {
             Welcome to my portfolio! Explore my journey in web development and AI prompting. Discover projects showcasing my expertise in front-end development.
         </p>
 
-        <div className='grid grid-cols-auto my-10 gap-5'>
+        <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5'>
             {workData.map((project, index)=>(
                 <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
                  key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
