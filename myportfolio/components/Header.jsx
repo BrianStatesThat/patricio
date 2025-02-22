@@ -8,7 +8,7 @@ const Header = () => {
     h-screen flex flex-col items-center justify-center gap-4'>
       <div className=' pt-32' >
       <Image src={assets.profile_img} alt=''
-      className='rounded-full w-32'/>
+      className='rounded-full w-32 h-32 object-cover mt-3'/>
       </div>
       <h3 className='text-3xl sm:text-6xl lg:text-[66px] font-O' >
         Hello! I'm Mandilakhe Brian Speelman
