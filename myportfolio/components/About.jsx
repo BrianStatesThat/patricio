@@ -14,7 +14,7 @@ const About = () => {
           </div>
           <div className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-            With a background in front-end development, IT support, and cybersecurity, I leverage my customer service experience to create user-focused, intuitive web solutions that prioritize client needs and satisfaction.
+            A passionate Front-End Web Developer based in Gqeberha, with a strong foundation in IT and web technologies. I specialize in creating user-friendly, responsive websites that deliver seamless experiences. With a background in analytical chemistry, I bring a detail-oriented approach to problem-solving and design. Currently, I'm focusing on expanding my skills in full-stack development and exploring blockchain applications. Lets connect and create something amazing together!
             </p>
 
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl' >
