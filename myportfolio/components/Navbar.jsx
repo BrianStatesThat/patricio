@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
 
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-       md:max-h-28 sm:h-20
+       md:max-h-20 sm:h-20
         flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm": ""}`}>
             <a href="#top">
                 <Image 
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
