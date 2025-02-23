@@ -48,11 +48,11 @@ const Contact = () => {
             name='email'/>
           </div>
           <textarea className='w-full mb-6 p-4 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white' rows='6' placeholder='Please enter your message' name='message' id="" required ></textarea>
+            rounded-md bg-white dark:bg-darkTheme ' rows='6' placeholder='Please enter your message' name='message' id="" required ></textarea>
 
           <button type='submit'
             className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
-            text-white rounded-full mx-auto hover:bg-black duration-500' >Submit now <Image
+            text-white rounded-full mx-auto hover:bg-black duration-500  dark:border dark:border-x-darkTheme' >Submit now <Image
             src={assets.right_arrow_white} alt='' className='w-4'/></button>
 
             <p className='mt-4'>{result}</p>
