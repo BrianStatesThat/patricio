@@ -41,10 +41,10 @@ const Contact = () => {
         <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
           <div className='flex flex-col justify-between gap-6 mt-10 mb-8 overflow-hidden'>
             <input className=' p-3 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white w-ful dark:text-blackl' type="text" placeholder='Please enter your name' required
+            rounded-md bg-white w-ful dark:bg-darkTheme dark:text-black' type="text" placeholder='Please enter your name' required
             name='name' />
             <input className=' p-3 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white w-full dark:text-black' type="email" placeholder='Please enter your email address' required 
+            rounded-md bg-white w-full dark:bg-darkTheme dark:text-black' type="email" placeholder='Please enter your email address' required 
             name='email'/>
           </div>
           <textarea className='w-full mb-6 p-4 outline-none border-[0.5px] border-gray-400
