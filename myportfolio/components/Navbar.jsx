@@ -34,12 +34,12 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
   return (
     <>
         <div className='fixed right-0 w-11/12 -z-10 translate-y-[-80%]
-         dark:hidden overflow-hidden'>
+         dark:hidden overflow-y-hidden'>
             <Image src={assets.header_bg_color} alt='' className='w-fit' />
         </div>
 
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-       md:max-h-20 h-16 overflow-x-hidden overflow-y-hidden
+       md:max-h-20 h-16
         flex items-center justify-between z-50
          ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20": ""}`}>
             <a href="#top">
