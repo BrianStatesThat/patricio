@@ -41,14 +41,14 @@ const Contact = () => {
         <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
           <div className='flex flex-col justify-between gap-6 mt-10 mb-8 overflow-hidden'>
             <input className=' p-3 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white w-full' type="text" placeholder='Please enter your name' required
+            rounded-md bg-white w-ful dark:text-blackl' type="text" placeholder='Please enter your name' required
             name='name' />
             <input className=' p-3 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white w-full' type="email" placeholder='Please enter your email address' required 
+            rounded-md bg-white w-full dark:text-black' type="email" placeholder='Please enter your email address' required 
             name='email'/>
           </div>
           <textarea className='w-full mb-6 p-4 outline-none border-[0.5px] border-gray-400
-            rounded-md bg-white dark:bg-darkTheme ' rows='6' placeholder='Please enter your message' name='message' id="" required ></textarea>
+            rounded-md bg-white dark:bg-darkTheme dark:text-black ' rows='6' placeholder='Please enter your message' name='message' id="" required ></textarea>
 
           <button type='submit'
             className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
