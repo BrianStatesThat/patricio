@@ -1,29 +1,53 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
     <div className='w-11/12 max-w-3xl text-center mx-auto lg:pt-28 mb-28
     h-screen flex flex-col items-center justify-center gap-4'>
-      <div className=' pt-32' >
-      <Image src={assets.profile_img} alt=''
-      className='rounded-full w-32 h-32 object-cover mt-3'/>
-      </div>
-      <h3 className='text-3xl sm:text-6xl lg:text-[66px] font-O' >
+      <motion.div
+        initial={{scale:0}}
+        whileInView={{scale: 1}}
+        transition={{duration:0.8, type: 'spring', stiffness: 100}}
+      className=' pt-32' >
+        <Image src={assets.profile_img} alt=''
+        className='rounded-full w-32 h-32 object-cover mt-3'/>
+      </motion.div>
+
+      <motion.h3
+       initial={{y: -20, opacity: 0}}
+       whileInView={{y: 0, opacity:1}}
+       transition={{duration:0.6, delay: 0.3}}
+      className='text-3xl sm:text-6xl lg:text-[66px] font-O' >
         Hello! I'm Mandilakhe Brian Speelman
-      </h3>
-      <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
+      </motion.h3>
+
+      <motion.h1 
+      initial={{y: -30, opacity: 0}}
+      whileInView={{y: 0, opacity:1}}
+      transition={{duration:0.8, delay: 0.5}}
+      className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
         Front-End Web Developer based in Gqeberha
-      </h1>
-      <p className='max-w-2xl mx-auto font-Ovo'>
+      </motion.h1>
+      <motion.p 
+      initial={{opacity: 0}}
+      whileInView={{opacity:1}}
+      transition={{duration:0.6, delay: 0.7}}
+      className='max-w-2xl mx-auto font-Ovo'>
       Welcome to my portfolio! I specialize in creating intuitive, responsive websites with a strong focus on clean design and user experience. With a detail-oriented approach rooted in my background in IT, I'm passionate about transforming ideas into functional, engaging digital solutions. Let's collaborate and make something great!
-      </p>
+      </motion.p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-        <a href="/sample-resume.pdf" download 
-        className='px-10 py-3 border rounded-full border-gray-500
-        flex items-center gap-2 bg-white dark:text-black'>
-          my resume <Image src={assets.download_icon} alt='' className='w-4'/></a>
+        <motion.a
+        initial={{y: 30, opacity: 0}}
+        whileInView={{y: 0, opacity:1}}
+        transition={{duration:0.6, delay: 1}} 
+          href="/sample-resume.pdf" download 
+          className='px-10 py-3 border rounded-full border-gray-500
+          flex items-center gap-2 bg-white dark:text-black'>
+          my resume <Image src={assets.download_icon} alt='' className='w-4'/>
+        </motion.a>
       </div>
     </div>
     
