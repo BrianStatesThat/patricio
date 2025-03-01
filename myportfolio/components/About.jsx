@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
           transition={{duration:0.8, delay: 0.8}} 
            className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-            A passionate Front-End Web Developer based in Gqeberha, with a strong foundation in IT and web technologies. I specialize in creating user-friendly, responsive websites that deliver seamless experiences. With a background in analytical chemistry, I bring a detail-oriented approach to problem-solving and design. Currently, I'm focusing on expanding my skills in full-stack development and exploring blockchain applications. Lets connect and create something amazing together!
+            A passionate Front-End Web Developer based in Gqeberha, with a strong foundation in IT and Computer Science. I specialize in creating user-friendly, responsive websites that deliver seamless experiences. With a background in analytical chemistry, I bring a detail-oriented approach to problem-solving and design. Currently, I'm focusing on expanding my skills in full-stack development and exploring blockchain applications. Lets connect and create something amazing together!
             </p>
 
             <motion.ul
