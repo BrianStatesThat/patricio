@@ -52,7 +52,7 @@ const Contact = () => {
 
           <button type='submit'
             className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
-            text-white rounded-full mx-auto hover:bg-black duration-500  dark:border dark:border-x-darkTheme' >Submit now <Image
+            text-white rounded-full mx-auto hover:bg-black duration-500 dark:border-[0.5px] dark:border-white dark:bg-black dark:hover:bg-stone-950' >Submit now <Image
             src={assets.right_arrow_white} alt='' className='w-4'/></button>
 
             <p className='mt-4'>{result}</p>

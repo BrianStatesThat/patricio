@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { workData, assets } from '@/assets/assets';
 
-const Work = () => {
+const Work = ({isDarkMode}) => {
   return (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <h4 className='text-center mb-2 text-lg font-Ovo'>Portfolio</h4>
@@ -12,7 +12,7 @@ const Work = () => {
             Welcome to my portfolio! Explore my journey in web development and AI prompting. Discover projects showcasing my expertise in front-end development.
         </p>
 
-        <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5'>
+        <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
             {workData.map((project, index)=>(
                 <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
                  key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
@@ -34,8 +34,9 @@ const Work = () => {
         </div>
 
         <a href="" className='w-max flex itmes-center justify-center gap-2 text-gray-700
-        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500'>
-            Show more<Image src={assets.right_arrow_bold} alt='right arrow'
+        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500
+        dark:text-white dark:border-white dark:hover:bg-darkHover'>
+            Show more<Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='right arrow'
             className='w-4 h-4 py-auto my-auto' />
         </ a>
 

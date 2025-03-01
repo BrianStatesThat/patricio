@@ -23,13 +23,13 @@ const About = ({isDarkMode}) => {
               hover:-translate-y-1 duration-500 ease-in-out hover:shadow-black
               dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                 <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
-                <p className='text-gray-600 text-sm'>{description}</p>
+                <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
+                <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
               </li>
               ))}
             </ul>
 
-            <h4 className='my-6 text-gray-700 font-Ovo'>Tools</h4>
+            <h4 className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools</h4>
 
             <ul className='flex items-center gap-3 sm:gap-5'>
               {toolsData.map((tool, index)=>(
