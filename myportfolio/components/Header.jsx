@@ -36,7 +36,7 @@ const Header = () => {
       whileInView={{opacity:1}}
       transition={{duration:0.6, delay: 0.7}}
       className='max-w-2xl mx-auto font-Ovo'>
-      Welcome to my portfolio! I specialize in creating intuitive, responsive websites with a strong focus on clean design and user experience. With a detail-oriented approach rooted in my background in IT, I'm passionate about transforming ideas into functional, engaging digital solutions. Let's collaborate and make something great!
+      Welcome to my portfolio! I specialize in creating intuitive, responsive websites with a strong focus on clean design and user experience. With a detail-oriented approach rooted in my background in Computer Science, I'm passionate about transforming ideas into functional, engaging digital solutions. Let's collaborate and make something great!
       </motion.p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
         <motion.a
