@@ -8,29 +8,29 @@ function Navicons({isDarkMode}) {
             <ul className='flex w-full items-center gap-6 justify-center
             bg-white text-black font-Ovo text-lg 
             lg:gap-8 px-12 py-3 dark:bg-darkHover dark:text-white'>
-                <li>
+                <li className='flex flex-row items-center gap-1'>
                     <a href="#top">
                     <Image src={isDarkMode? assets.home_dark : assets.home_light} alt='' 
                     className='w-max height-max '/>
                     <p>Home</p>
                     </a>
                 </li>
-                <li>
+                <li className='flex flex-row items-center gap-1'>
                     <a href="#about">
                     <Image src={isDarkMode? assets.region_dark : assets.region_light} alt='' 
                     className='w-max height-max '/>
                     <p>Locate</p>
                     </a>
                 </li>
-                <li>
+                <li className='flex flex-row items-center gap-1'>
                     <a href="#work">
                     <Image src={isDarkMode? assets.book_dark : assets.book_light} alt='' 
                     className='w-max height-max '/>
-                    <p>Booking</p>
+                    <p>Book</p>
                     
                     </a>
                 </li>
-                <li>
+                <li className='flex flex-row items-center gap-1'>
                     <a href="#contact">
                     <Image src={isDarkMode? assets.options_dark : assets.options_light} alt='' 
                     className='w-max height-max '/>

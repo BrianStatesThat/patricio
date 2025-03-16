@@ -96,21 +96,21 @@ export const workData = [
     {
         title: 'GENTLEMEN',
         description: 'FROM: R50',
-        bgImage: '/work-1.png'},
+        bgImage: '/gents.jpg'},
     {
         title: 'LADIES',
         description: 'FROM: R50',
-        bgImage: '/work-2.png',
+        bgImage: '/ladies.jpg',
     },
     {
         title: 'KIDS',
         description: 'FROM: R40',
-        bgImage: '/work-3.png',
+        bgImage: '/kids.jpg',
     },
     {
-        title: 'BEARD AND TRIMMING',
+        title: 'TRIMMING & COLOR',
         description: 'FROM: R30',
-        bgImage: '/work-4.png',
+        bgImage: '/color.jpg',
     },
 ]
 
