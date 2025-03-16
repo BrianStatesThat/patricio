@@ -30,7 +30,13 @@ function Navicons({isDarkMode}) {
                     
                     </a>
                 </li>
-                <li><a href="#contact">More</a></li>
+                <li>
+                    <a href="#contact">
+                    <Image src={isDarkMode? assets.options_dark : assets.options_light} alt='' 
+                    className='w-max height-max '/>
+                    <p>More</p>
+                    </a>
+                </li>
             </ul>
         </div>        
   )
