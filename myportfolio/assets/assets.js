@@ -37,8 +37,20 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import home_light from './icons8-home-light.png';
 import home_dark from './icons8-home-dark.png';
+import region_light from './icons8-region-light.png';
+import region_dark from './icons8-region-dark.png';
+import book_light from './icons8-calendar-plus-light.png';
+import book_dark from './icons8-calendar-plus-dark.png';
+import options_dark from './icons8-menu-dark.png';
+import options_light from './icons8-menu-light.png';
 
 export const assets = {
+    options_dark,
+    options_light,
+    book_light,
+    book_dark,
+    region_dark,
+    region_light,
     home_light,
     home_dark,
     user_image,
