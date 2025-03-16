@@ -9,7 +9,7 @@ const Work = ({isDarkMode}) => {
         <h2 className='text-center text-5xl font-Ovo'>See our unique styles</h2>
 
         <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-Ovo'>
-        Check out our classy haircuts and choose one would best suit you and your style.
+        Check out our classy haircuts and choose one that will best suit you and your style.
         </p>
 
         <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
