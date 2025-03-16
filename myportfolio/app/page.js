@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Navicons from "@/components/Navicons";
 import { useEffect, useState } from "react";
 
 
@@ -40,6 +41,7 @@ export default function Home() {
       <Work isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
+      <Navicons isDarkMode={isDarkMode} />
     </>
   );
 }

@@ -51,7 +51,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <Image 
                 src={isDarkMode ? assets.logo_dark : assets.logo}
                 alt='logo'
-                className='w-28 cursor-pointer mr-14 p-0' />
+                className='w-28 cursor-pointer p-0' />
             </a>
 
             <ul className={`hidden md:flex items-center gap-6 
