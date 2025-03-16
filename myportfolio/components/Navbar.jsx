@@ -42,6 +42,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
        md:max-h-20 h-16
         flex items-center justify-between z-50
          ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20": ""}`}>
+
+            <button onClick={()=> setIsDarkMode(prev => !prev)}>
+                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
+            </button>
+            
             <a href="#top">
                 <Image 
                 src={isDarkMode ? assets.logo_dark : assets.logo}
@@ -58,11 +63,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div className='flex items-center gap-4'
-            >
-                 <button onClick={()=> setIsDarkMode(prev => !prev)}>
-                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
-                </button>
+            <div className='flex items-center gap-4'>
 
                 <a href="#contact" className='hidden lg:flex items-center gap-3
                 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo
