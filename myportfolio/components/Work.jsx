@@ -5,11 +5,11 @@ import { workData, assets } from '@/assets/assets';
 const Work = ({isDarkMode}) => {
   return (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>Portfolio</h4>
-        <h2 className='text-center text-5xl font-Ovo'>Latest work</h2>
+        <h4 className='text-center mb-2 text-lg font-Ovo'>Haircuts and Styles</h4>
+        <h2 className='text-center text-5xl font-Ovo'>See our unique styles</h2>
 
         <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-Ovo'>
-            Welcome to my portfolio! Explore my journey in web development and AI prompting. Discover projects showcasing my expertise in front-end development.
+        Check out our classy haircuts and choose one would best suit you and your style.
         </p>
 
         <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
