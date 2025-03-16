@@ -39,6 +39,8 @@ import home_light from './icons8-home-light.png';
 import home_dark from './icons8-home-dark.png';
 
 export const assets = {
+    home_light,
+    home_dark,
     user_image,
     code_icon,
     code_icon_dark,

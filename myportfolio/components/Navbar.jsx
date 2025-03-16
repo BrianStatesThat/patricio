@@ -54,15 +54,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 className='w-28 cursor-pointer p-0' />
             </a>
 
-            <ul className={`hidden md:flex items-center gap-6 
-            lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shaddow-sm bg-opacity-50 backdrop-blur-md z-50 dark:border dark:border-white/50  dark:bg-transparent "} `}>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#work">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
             <div className='flex items-center gap-4'>
 
                 <a href="#contact" className='hidden lg:flex items-center gap-3
