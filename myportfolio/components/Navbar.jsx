@@ -2,7 +2,7 @@
 
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 
@@ -10,16 +10,6 @@ import React from 'react';
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
     const [isScroll, setIsScroll] = useState(false);
-
-    const sideMenuRef = useRef();
-
-    const openMenu = () => {
-        sideMenuRef.current.style.transform =  'translateX(-16rem)'
-    }
-
-    const  closeMenu = () => {
-        sideMenuRef.current.style.transform =  'translateX(16rem)'
-    }
 
     useEffect(()=>{
         window.addEventListener('scroll', ()=>{
@@ -67,34 +57,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                     alt='arrow' />
                 </a>
 
-                <button className='block  md:hidden ml-3' onClick={openMenu}
+                <button className='block right-0 mx-0 w-[30px] h-[30px]'
                 >
-                    <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-3'/>
+                    <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt='' className='w-[30px] h-[30px]'/>
                 </button>
-                
-
-                {/*---mobile--- menu*/}
-
-            <ul ref={sideMenuRef}
-            className='flex md:hidden flex-col gap-4 py-20
-            px-10 fixed -right-64  top-0 bottom-0 w-64 z-50 h-screen
-            bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'
-            >
-                <div className='absolute right-6 top-6'
-                onClick={closeMenu}
-                >
-                    <Image src={isDarkMode ? assets.close_white : assets.close_black } alt=''
-                     className='w-5 cursor-pointer'
-                     />
-                </div>
-
-                <li><a onClick={closeMenu}      href="#top">Home</a></li>
-                <li><a onClick={closeMenu}      href="#about">About</a></li>
-                <li><a onClick={closeMenu}      href="#services">Services</a></li>
-                <li><a onClick={closeMenu}      href="#work">Projects</a></li>
-                <li><a onClick={closeMenu}      href="#contact">Contact</a></li>
-            </ul>
-
+        
             
             </div>
         </nav>

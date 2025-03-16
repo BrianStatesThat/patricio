@@ -13,7 +13,7 @@ const Header = () => {
         transition={{duration:0.8, type: 'spring', stiffness: 100}}
       className=' pt-32' >
         <Image src={assets.profile_img} alt=''
-        className='rounded-full w-32 h-32 object-cover mt-3'/>
+        className='rounded-full w-32 h-32 object-cover mt-16'/>
       </motion.div>
 
       <motion.h3
