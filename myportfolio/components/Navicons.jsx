@@ -11,42 +11,42 @@ function Navicons({isDarkMode}) {
         sideMenuRef.current.style.transform =  'translateX(-16rem)'
     }
 
-    const  closeMenu = () => {
+    const closeMenu = () => {
         sideMenuRef.current.style.transform =  'translateX(16rem)'
     }
 
-  return (
-        <div className='fixed flex z-50 items-center justify-center gap-6 w-full bottom-0'>
-            <ul className='flex w-full items-center gap-6 justify-center
+    return (
+        <div className='w-full fixed flex z-50 items-center justify-stretch gap-6 bottom-0'>
+            <ul className='flex w-full items-center gap-6 justify-between
             bg-white text-black font-Ovo text-lg 
             lg:gap-8 px-12 py-3 dark:bg-darkHover dark:text-white'>
-                <li className='flex flex-row items-center gap-1'>
+              <li className='flex flex-col items-center justify-between gap-1 h-[60px] '>
                     <a href="#top">
                     <Image src={isDarkMode? assets.home_dark : assets.home_light} alt='' 
-                    className='w-max height-max '/>
-                    <p>Home</p>
+                    className='w-8 h-8 flex items-center justify-center '/>
+                    <p className='text-center w-8 h-8 flex items-center justify-center'>Home</p>
                     </a>
                 </li>
-                <li className='flex flex-row items-center gap-1'>
+              <li className='flex flex-col items-center justify-between gap-1 h-[60px]'>
                     <a href="#about">
                     <Image src={isDarkMode? assets.region_dark : assets.region_light} alt='' 
-                    className='w-max height-max '/>
-                    <p>Locate</p>
+                    className='w-8 h-8 flex items-center justify-center'/>
+                    <p className='text-center w-8 h-8 flex items-center justify-center' >Locate</p>
                     </a>
                 </li>
-                <li className='flex flex-row items-center gap-1'>
+                <li className='flex flex-col items-center justify-between  gap-1 h-[60px]'>
                     <a href="#work">
-                    <Image src={isDarkMode? assets.book_dark : assets.book_light} alt='' 
-                    className='w-max height-max '/>
-                    <p>Book</p>
+                    <Image src={isDarkMode? assets.book_dark : assets.book_light} alt=''
+                    className='w-8 h-8 flex items-center justify-center'/>
+                    <p className='text-center w-8 h-8 flex items-center justify-center'>Book</p>
                     
                     </a>
                 </li>
-                <li className='flex flex-row items-center gap-1'>
+                <li className='flex flex-col items-center justify-between gap-1 h-[60px]'>
                     <button onClick={openMenu}>
                         <Image src={isDarkMode? assets.options_dark : assets.options_light} alt='' 
-                        className='w-max height-max '/>
-                        <p>More</p>
+                        className='w-8 h-8 flex items-center justify-center'/>
+                        <p className='text-center w-8 h-8 flex items-center justify-center'>More</p>
                     </button>
                 </li>
             </ul>
