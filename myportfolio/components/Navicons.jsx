@@ -66,11 +66,11 @@ function Navicons({isDarkMode}) {
                      />
                 </div>
 
-                <li><a onClick={closeMenu}      href="#top">Home</a></li>
+                <li><a onClick={closeMenu}      href="#top">Services Catalogue</a></li>
                 <li><a onClick={closeMenu}      href="#about">About</a></li>
-                <li><a onClick={closeMenu}      href="#services">Services</a></li>
-                <li><a onClick={closeMenu}      href="#work">Projects</a></li>
-                <li><a onClick={closeMenu}      href="#contact">Contact</a></li>
+                <li><a onClick={closeMenu}      href="#services">Academy</a></li>
+                <li><a onClick={closeMenu}      href="#work">Own-A-Franchise</a></li>
+                <li><a onClick={closeMenu}      href="#contact">Contact Us</a></li>
             </ul>
 
         </div>        
