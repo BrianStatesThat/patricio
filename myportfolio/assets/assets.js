@@ -92,6 +92,74 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+export const short_fade = [
+    {
+        title: 'High Fade',
+        description: 'R35',
+        bgImage: '/gents.jpg'},
+    {
+        title: 'Mid Fade',
+        description: 'R35',
+        bgImage: '/ladies.jpg',
+    },
+    {
+        title: 'Low Fade',
+        description: 'R40',
+        bgImage: '/kids.jpg',
+    },
+]
+
+export const taper_fade = [
+    {
+        title: 'High Fade',
+        description: 'R35',
+        bgImage: '/gents.jpg'},
+    {
+        title: 'Mid Fade',
+        description: 'R35',
+        bgImage: '/ladies.jpg',
+    },
+    {
+        title: 'Low Fade',
+        description: 'R40',
+        bgImage: '/kids.jpg',
+    },
+]
+
+export const ht_fade = [
+    {
+        title: 'High Fade',
+        description: 'R35',
+        bgImage: '/gents.jpg'},
+    {
+        title: 'Mid Fade',
+        description: 'R35',
+        bgImage: '/ladies.jpg',
+    },
+    {
+        title: 'Low Fade',
+        description: 'R40',
+        bgImage: '/kids.jpg',
+    },
+]
+
+export const ladies = [
+    {
+        title: 'High Fade',
+        description: 'R35',
+        bgImage: '/gents.jpg'},
+    {
+        title: 'Mid Fade',
+        description: 'R35',
+        bgImage: '/ladies.jpg',
+    },
+    {
+        title: 'Low Fade',
+        description: 'R40',
+        bgImage: '/kids.jpg',
+    },
+]
+
 export const workData = [
     {
         title: 'GENTLEMEN',
@@ -113,6 +181,7 @@ export const workData = [
         bgImage: '/color.jpg',
     },
 ]
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
