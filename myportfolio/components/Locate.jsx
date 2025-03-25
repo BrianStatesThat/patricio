@@ -12,7 +12,7 @@ const Locate = () => {
              Conveniently located for all your grooming needs - swing by and let us take care of your fresh cut today!
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!4v1742298981461!6m8!1m7!1sAvWHD6BwJ2kuFf3c5RaXJQ!2m2!1d-33.87291611363754!2d25.58397673796407!3f28.542775740084945!4f-5.703038083750528!5f1.2205863979737528"
-            allow="accelerometer; gyroscope" className='absolute pt-[10px] pb-[84px] w-[300px] h-[500px] rounded-sm mx-auto' referrerPolicy="no-referrer-when-downgrade">
+            allow="accelerometer; gyroscope" className=' flex items-center justify-center absolute pt-[10px] pb-[84px] w-[300px] h-[500px] rounded-sm mx-auto' referrerPolicy="no-referrer-when-downgrade">
             </iframe>
             </div>
         </div>
