@@ -4,7 +4,7 @@ import React from 'react';
 const Locate = () => {
 
     return (
-        <div className='flex flex-col w-full pt-[64]  px-1 item-center justify-center overflow-x-hidden'>
+        <div className='flex flex-col w-full pt-[64px]  px-1 item-center justify-center overflow-x-hidden'>
             <div className='w-[300x] rounded-lg mx-auto md:w-[450px] lg:w-[600px] xl:w-[800px] overflow-x-hidden'>
             <h2 className='text-center text-4xl font-Ovo'>Locate Us</h2>
             <p className='text-center max-w-2x mx-auto pt-5 font-Ovo px-1'>
