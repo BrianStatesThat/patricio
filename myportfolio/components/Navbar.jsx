@@ -30,7 +30,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
        md:max-h-20 h-16
-        flex items-center justify-between z-50
+        flex items-center justify-between z-50 ovverflow-x-hidden
          ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20": ""}`}>
 
             <button onClick={()=> setIsDarkMode(prev => !prev)}>

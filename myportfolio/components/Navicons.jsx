@@ -17,7 +17,7 @@ function Navicons({isDarkMode}) {
     }
 
     return (
-        <div className='w-full fixed flex z-50 items-center justify-stretch gap-6 bottom-0'>
+        <div className='w-full fixed flex z-50 items-center justify-stretch gap-6 bottom-0 overflow-x-hidden'>
             <ul className='flex w-full items-center gap-6 justify-between
             bg-white text-black font-Ovo text-lg 
             lg:gap-8 px-12 py-3 dark:bg-darkHover dark:text-white'>

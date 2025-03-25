@@ -43,8 +43,14 @@ import book_light from './icons8-calendar-plus-light.png';
 import book_dark from './icons8-calendar-plus-dark.png';
 import options_dark from './icons8-menu-dark.png';
 import options_light from './icons8-menu-light.png';
+import barbershop from './barbershop.png';
+import cash from './cash2.png';
+import where from './where.png';
 
 export const assets = {
+    cash,
+    where,
+    barbershop,
     options_dark,
     options_light,
     book_light,
@@ -184,10 +190,9 @@ export const workData = [
 
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.barbershop, title: 'Style Maintainance', description: 'Get your Hair Products from Patrick\'s barber and look fresh for longer', link: '' },
+    { icon: assets.where, title: 'Find Us', description: 'Quickly make your next appointment in-store.', link: '' },
+    { icon: assets.cash, title: 'Become a verified reseller', description: 'Partner with us and sell our grooming products.', link: '' },
 ]
 
 export const infoList = [
