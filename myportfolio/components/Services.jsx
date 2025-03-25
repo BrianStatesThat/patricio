@@ -5,13 +5,8 @@ import React from 'react'
 const Services = () => {
   return (
     <div id='services' className='w-full px-[12%] scroll-mt-20 pt-[64px] pb-[20px]'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>Haircuts and Styles</h4>
-        <h2 className='text-center text-5xl font-Ovo'>See our unique styles</h2>
-
-        <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-Ovo'>
-        Check out our classy haircuts and choose one would best suit you and your style.
-        </p>
-
+        <h4 className='text-center mb-2 text-4xl font-Ovo'>See how we can help you</h4>
+        <h2 className='text-center text-lg font-Ovo'>Feel the pulse of the iKasi, served up quick and real.</h2>
         <div className='grid sm:grid-cols-auto md:grid-cols-4  gap-6 my-10 '>
           {serviceData.map(({icon, title, description, link}, index)=>(
             <div key={index}
