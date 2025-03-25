@@ -3,7 +3,17 @@ import Image from 'next/image';
 import React from 'react';
 import {motion} from "motion/react";
 
+export const metadata = {
+  title: "Brian Speelman",
+  description: "Welcome to my portfolio! I am Mandilake Brian Speelman, a passionate front-end developer and AI enthusiast. I specialize in building sleek, responsive websites and AI-powered solutions that enhance user experiences. Explore my projects and see how I bring ideas to life with clean code and innovative design.",
+  icons: {
+    icon:"/favicon.png",
+  },
+};
+
 const About = ({isDarkMode}) => {
+
+  
   return (
     <motion.div 
     initial={{opacity: 0}}

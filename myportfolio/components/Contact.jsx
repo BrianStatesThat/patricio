@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 overflow-x-hidden'>
+    <div id='contact' className='w-full px-[12%] scroll-mt-20 overflow-x-hidden pt-[64px] pb-[84px]'>
         <h4 className='text-center mb-2 text-lg font-Ovo'>Contact Form</h4>
         <h2 className='text-center text-5xl font-Ovo '>Send a message</h2>
 

@@ -1,5 +1,9 @@
+'use client';
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Navicons from "@/components/Navicons";
+import { useEffect,useState } from "react";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -11,22 +15,37 @@ const ovo = Ovo({
   weight: ["400"]
 });
 
-export const metadata = {
-  title: "Brian Speelman",
-  description: "Welcome to my portfolio! I am Mandilake Brian Speelman, a passionate front-end developer and AI enthusiast. I specialize in building sleek, responsive websites and AI-powered solutions that enhance user experiences. Explore my projects and see how I bring ideas to life with clean code and innovative design.",
-  icons: {
-    icon:"/favicon.png",
-  },
-};
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children}) {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(()=>{
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && 
+    window.matchMedia('(prefers-color-scheme: dark)').matches) ) {
+      setIsDarkMode(true)
+    } else {
+      setIsDarkMode(false)
+    }
+  },[])
+
+  useEffect(()=> {
+    if(isDarkMode){
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = '';
+    }
+  },[isDarkMode])
   return (
     <html lang="en" className="scroll-smooth" >
       <body
         className={`${outfit.className} ${ovo.className} intialiased leading-8 overflow-x-hidden dark:bg-darkTheme
         dark:text-white
       `}>
+        <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
         {children}
+        <Navicons isDarkMode={isDarkMode}/>
       </body>
     </html>
   );

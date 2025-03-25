@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useRef } from 'react';
 import { assets } from '@/assets/assets';
+import Link from 'next/link';
 
 function Navicons({isDarkMode}) {
      const sideMenuRef = useRef();
@@ -21,18 +22,18 @@ function Navicons({isDarkMode}) {
             bg-white text-black font-Ovo text-lg 
             lg:gap-8 px-12 py-3 dark:bg-darkHover dark:text-white'>
               <li className='flex flex-col items-center justify-between gap-1 h-[60px] '>
-                    <a href="#top">
+                    <Link href="/">
                     <Image src={isDarkMode? assets.home_dark : assets.home_light} alt='' 
                     className='w-8 h-8 flex items-center justify-center '/>
                     <p className='text-center w-8 h-8 flex items-center justify-center'>Home</p>
-                    </a>
+                    </Link>
                 </li>
               <li className='flex flex-col items-center justify-between gap-1 h-[60px]'>
-                    <a href="#about">
+                    <Link href="/locate">
                     <Image src={isDarkMode? assets.region_dark : assets.region_light} alt='' 
                     className='w-8 h-8 flex items-center justify-center'/>
                     <p className='text-center w-8 h-8 flex items-center justify-center' >Locate</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='flex flex-col items-center justify-between  gap-1 h-[60px]'>
                     <a href="#work">
@@ -54,7 +55,7 @@ function Navicons({isDarkMode}) {
             {/*---mobile--- menu*/}
 
             <ul ref={sideMenuRef}
-            className='flex md:hidden flex-col gap-4 py-20
+            className='flex flex-col gap-4 py-20
             px-10 fixed -right-64  top-0 bottom-0 w-64 z-50 h-screen
             bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'
             >
@@ -66,11 +67,15 @@ function Navicons({isDarkMode}) {
                      />
                 </div>
 
-                <li><a onClick={closeMenu}      href="#top">Services Catalogue</a></li>
-                <li><a onClick={closeMenu}      href="#about">About</a></li>
-                <li><a onClick={closeMenu}      href="#services">Academy</a></li>
-                <li><a onClick={closeMenu}      href="#work">Own-A-Franchise</a></li>
-                <li><a onClick={closeMenu}      href="#contact">Contact Us</a></li>
+                <li><a onClick={closeMenu} href="#top">Services Catalogue</a></li>
+                <li><a onClick={closeMenu} href="#about">About</a></li>
+                <li><a onClick={closeMenu} href="#services">Academy</a></li>
+                <li><a onClick={closeMenu} href="#work">Own-A-Franchise</a></li>
+                <li>
+                    <Link onClick={closeMenu} href='/contact'>
+                    Contact Us
+                    </Link>
+                </li>
             </ul>
 
         </div>        
