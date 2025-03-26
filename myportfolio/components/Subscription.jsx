@@ -17,7 +17,7 @@ const Subscription = () => {
           <div className="text-white font-extrabold text-[40px] [text-shadow:0px_0px_10px_rgba(0,0,0,0.42)]">
             R100 per month
           </div>
-          <div className="text-[rgba(255,255,255,0.6)] mt-2.5 text-sm">
+          <div className="font-regular text-[rgba(255,255,255,0.6)] mt-2.5 text-sm">
             Sign up for our VIP subscription to enjoy queue skips and receive two free basic haircuts each month, no dye included.
              Join now and take advantage of these exclusive perks!
           </div>

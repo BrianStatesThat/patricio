@@ -15,12 +15,12 @@ const Services = () => {
              hover:-translate-y-1 duration-500 
              dark:hover:bg-darkHover dark:hover:shadow-white '>
               <Image src={icon} alt='' className='flex flex-col items-center justify-center mx-auto w-10' />
-              <h3 className='text-lg my-4 text-gray-700 dark:text-white text-center'>{title}</h3>
-              <p className='text-sm text-gray-600 leading-5 dark:text-white/80 text-center'>
+              <h3 className='font-regular text-lg my-4 text-gray-700 dark:text-white text-center'>{title}</h3>
+              <p className='font-regular text-sm text-gray-600 leading-5 dark:text-white/80 text-center'>
                 {description}
               </p>
               <a href={link} className='flex flex-col items-center justify-center mx-auto'>
-                <p className='text-center'>MORE</p> 
+                <p className='font-regular text-center'>MORE</p> 
                 <Image src={assets.right_arrow} alt='' className='flex flex-col items-center justify-center mx-auto w-4'/>
               </a>
             </div>

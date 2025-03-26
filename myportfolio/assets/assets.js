@@ -48,8 +48,10 @@ import cash from './cash2.png';
 import where from './where.png';
 import arrowleft from './icons8-arrow-left.png';
 import arrowright from './icons8-arrow-right.png';
+import elon from './elon.jpg';
 
 export const assets = {
+    elon,
     arrowleft,
     arrowright,
     cash,

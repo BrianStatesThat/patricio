@@ -32,22 +32,21 @@ function Navicons({isDarkMode}) {
                     <Link href="/locate">
                     <Image src={isDarkMode? assets.region_dark : assets.region_light} alt='' 
                     className='w-8 h-8 flex items-center justify-center'/>
-                    <p className='text-center w-8 h-8 flex items-center justify-center' >Locate</p>
+                    <p className='font-regular text-center w-8 h-8 flex items-center justify-center' >Locate</p>
                     </Link>
                 </li>
                 <li className='flex flex-col items-center justify-between  gap-1 h-[60px]'>
                     <a href="#work">
                     <Image src={isDarkMode? assets.book_dark : assets.book_light} alt=''
                     className='w-8 h-8 flex items-center justify-center'/>
-                    <p className='text-center w-8 h-8 flex items-center justify-center'>Book</p>
-                    
+                    <p className='font-regular text-center w-8 h-8 flex items-center justify-center'>Book</p>
                     </a>
                 </li>
                 <li className='flex flex-col items-center justify-between gap-1 h-[60px]'>
                     <button onClick={openMenu}>
                         <Image src={isDarkMode? assets.options_dark : assets.options_light} alt='' 
                         className='w-8 h-8 flex items-center justify-center'/>
-                        <p className='text-center w-8 h-8 flex items-center justify-center'>More</p>
+                        <p className='font-regular text-center w-8 h-8 flex items-center justify-center'>More</p>
                     </button>
                 </li>
             </ul>
@@ -73,7 +72,7 @@ function Navicons({isDarkMode}) {
                 <li><a onClick={closeMenu} href="#work">Own-A-Franchise</a></li>
                 <li>
                     <Link onClick={closeMenu} href='/contact'>
-                    Contact Us
+                        <p className='font-regular'>Contact Us</p>
                     </Link>
                 </li>
             </ul>
