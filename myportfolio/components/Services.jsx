@@ -16,8 +16,8 @@ const Services = () => {
              hover:-translate-y-1 duration-500 
              dark:hover:bg-darkHover dark:hover:shadow-white '>
               <Image src={icon} alt='' className='flex flex-col items-center justify-center mx-auto w-10' />
-              <h3 className='font-regular text-lg my-4 text-gray-700 dark:text-white text-center'>{title}</h3>
-              <p className='font-regular text-sm text-gray-600 leading-5 dark:text-white/80 text-center'>
+              <h2 className='font-regular text-4xl my-4 text-gray-700 dark:text-white text-center'>{title}</h2>
+              <p className='font-regular max-w-2x mx-auto pt-5 px-1 text-gray-600 leading-5 dark:text-white/80 text-center'>
                 {description}
               </p>
               <Link href={link} className='flex flex-col items-center justify-center mx-auto'>

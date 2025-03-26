@@ -65,13 +65,24 @@ const Headerx = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-none text-white p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
       >
         <Image src={assets.arrowleft} alt="left arrow" className="w-10 h-10 rounded-full"/>
       </button>
+      <div className="absolute top-1/4 transform-translate-x-1/2 transform-translate-y-1/2 z-15 h-72 max-w-72">
+        <div className="h-52 max-w-52 bg-darkTheme/50 rounded-lg mb-3">
+            <p className='font-semibold text-white text-center text-xl max-w-2x mx-auto pt-5 px-1'>
+            Your trusted barber, just around the corner.
+            </p>
+            <h2 className='font-extrabold text-white text-center text-4xl pt-5'>Patrick's Barber</h2>
+        </div>
+        <button className="flex flex-col items-center justify-center mx-auto pt-3 select-none border-none outline-none text-white uppercase font-bold text-xs py-3 px-6 bg-[rgb(33_150_243)] rounded-lg w-[90%] [text-shadow:0px_4px_18px_#2c3442]">
+          Connect
+        </button>
+      </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-none text-white p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
       >
         <Image src={assets.arrowright} alt="right arrow" className="w-10 h-10 rounded-full" />
       </button>
