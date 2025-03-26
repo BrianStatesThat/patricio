@@ -14,13 +14,14 @@ const Services = () => {
              hover:shadow-black cursor-pointer hover:bg-lightHover 
              hover:-translate-y-1 duration-500 
              dark:hover:bg-darkHover dark:hover:shadow-white '>
-              <Image src={icon} alt='' className='w-10' />
-              <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
-              <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
+              <Image src={icon} alt='' className='flex flex-col items-center justify-center mx-auto w-10' />
+              <h3 className='text-lg my-4 text-gray-700 dark:text-white text-center'>{title}</h3>
+              <p className='text-sm text-gray-600 leading-5 dark:text-white/80 text-center'>
                 {description}
               </p>
-              <a href={link}>
-                MORE <Image src={assets.right_arrow} alt='' className='w-4'/>
+              <a href={link} className='flex flex-col items-center justify-center mx-auto'>
+                <p className='text-center'>MORE</p> 
+                <Image src={assets.right_arrow} alt='' className='flex flex-col items-center justify-center mx-auto w-4'/>
               </a>
             </div>
           ))}

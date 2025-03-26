@@ -6,7 +6,10 @@ import React from 'react';
 const Subscription = () => {
   return (
     <div className="flex justify-center overflow-x-hidden">
-      <div className="flex flex-col items-center justify-around w-[260px] p-[20px_1px] m-[10px_0] text-center relative cursor-pointer shadow-[0_10px_15px_-3px_rgba(33,150,243,.4),0_4px_6px_-4px_rgba(33,150,243,.4)] rounded-xl bg-gradient-to-br from-[#04051dea] to-[#2b566e]">
+      <div className="flex flex-col items-center justify-around
+       w-[260px] md:w-[500px] p-[20px_1px] m-[10px_0] 
+       text-center relative cursor-pointer shadow-[0_10px_15px_-3px_rgba(33,150,243,.4),0_4px_6px_-4px_rgba(33,150,243,.4)] 
+       rounded-xl bg-gradient-to-br from-[#04051dea] to-[#2b566e]">
         <div className="p-5">
           <div className="font-extrabold uppercase text-[rgba(255,255,255,0.64)] mt-2.5 text-[25px] tracking-[1px]">
             VIP Subscription

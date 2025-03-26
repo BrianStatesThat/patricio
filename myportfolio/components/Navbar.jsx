@@ -31,10 +31,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
        md:max-h-20 h-16
         flex items-center justify-between z-50 ovverflow-x-hidden
-         ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20": ""}`}>
+         ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20": "bg-white dark:bg-darkTheme"}`}>
 
             <button onClick={()=> setIsDarkMode(prev => !prev)}>
-                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6'/>
+                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-[40px] h-[40px]'/>
             </button>
             
             <a href="#top">

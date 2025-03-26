@@ -19,7 +19,7 @@ import profile_img from './myface.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
-import moon_icon from './moon_icon.png';
+import moon_icon from './icons8-moon-100.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
@@ -46,8 +46,12 @@ import options_light from './icons8-menu-light.png';
 import barbershop from './barbershop.png';
 import cash from './cash2.png';
 import where from './where.png';
+import arrowleft from './icons8-arrow-left.png';
+import arrowright from './icons8-arrow-right.png';
 
 export const assets = {
+    arrowleft,
+    arrowright,
     cash,
     where,
     barbershop,
