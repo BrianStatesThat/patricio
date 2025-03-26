@@ -32,7 +32,7 @@ const Card = () => {
         </div>
       </div>
       <p className="font-regular message mt-4 text-gray-500 overflow-hidden line-clamp-3">
-      "U-Patrick wenza umsebenzi omhle kakhulu, andinoyocheba kwenza indawo. Great service and attention to detail! Very professional, and the experience was excellent. Highly recommended!"
+      "U-Patrick wenza umsebenzi omhle kakhulu, andinoyocheba kwenye indawo. Great service and attention to detail! Very professional, and the experience was excellent. Highly recommended!"
       </p>
     </div>
     </div>
