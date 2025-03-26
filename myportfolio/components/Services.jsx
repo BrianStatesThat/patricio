@@ -1,5 +1,6 @@
 import { assets, serviceData } from '@/assets/assets';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const Services = () => {
@@ -19,10 +20,10 @@ const Services = () => {
               <p className='font-regular text-sm text-gray-600 leading-5 dark:text-white/80 text-center'>
                 {description}
               </p>
-              <a href={link} className='flex flex-col items-center justify-center mx-auto'>
+              <Link href={link} className='flex flex-col items-center justify-center mx-auto'>
                 <p className='font-regular text-center'>MORE</p> 
                 <Image src={assets.right_arrow} alt='' className='flex flex-col items-center justify-center mx-auto w-4'/>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

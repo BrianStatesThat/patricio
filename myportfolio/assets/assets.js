@@ -197,7 +197,7 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.barbershop, title: 'Style Maintainance', description: 'Get your Hair Products from Patrick\'s barber and look fresh for longer', link: '' },
-    { icon: assets.where, title: 'Find Us', description: 'Quickly make your next appointment in-store.', link: '' },
+    { icon: assets.where, title: 'Find Us', description: 'Quickly make your next appointment in-store.', link: '/locate' },
     { icon: assets.cash, title: 'Become a verified reseller', description: 'Partner with us and sell our grooming products.', link: '' },
 ]
 
