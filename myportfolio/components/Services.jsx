@@ -5,7 +5,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div id='services' className='w-full px-[12%] scroll-mt-20 pt-[64px] pb-[20px]'>
+    <div id='services' className='mx-auto flex flex-col items-center justify-center w-full px-[12%] scroll-mt-20 pt-[64px] pb-[20px]'>
         <h4 className='text-center mb-2 text-4xl font-Ovo'>See how we can help you</h4>
         <h2 className='text-center text-lg font-Ovo'>Feel the pulse of the iKasi, served up quick and real.</h2>
         <div className='grid sm:grid-cols-auto md:grid-cols-4  gap-6 my-10 '>

@@ -5,10 +5,10 @@ import React from 'react';
 const Card = () => {
   return (
     <div className="flex flex-cols items-center justify-center">
-         <div className="w-[268.54px] h-[268.53] md:max-w-[500px] md:max-h-[500px] bg-gray-100 p-8 max-w-xs rounded-xl shadow-[0_20px_30px_-20px_rgba(5,5,5,0.24)]">
+         <div className="m-w-[314px] m-h-[340] md:max-w-[1080px] md:max-h-[1080px] bg-gray-100 p-8 max-w-xs rounded-xl shadow-[0_20px_30px_-20px_rgba(5,5,5,0.24)]">
       <div className="header flex items-center gap-4">
         <div className="h-16 w-16 rounded-full bg-blue-500">
-            <Image src={assets.elon} className='rounded-full w-16 h-16 flex flex-col justify-center items-center mx-auto' alt='user image' />
+            <Image src={assets.elon} className='rounded-full min-w-16 m-h-16 flex flex-col justify-center items-center mx-auto' alt='user image' />
         </div>
         <div>
           <div className="stars flex justify-center gap-0.5 text-orange-500">

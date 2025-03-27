@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+"use client"
+import * as motion from "motion/react-client";
+import React, { useState, useRef } from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 
+
+
 const Headerx = () => {
+  const constraintsRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
 
@@ -43,10 +48,21 @@ const Headerx = () => {
   };
 
   return (
-    <div
+    <motion.div
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       className="pt-[70px] relative flex justify-center items-center mx-auto bg-neutral rounded-box sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-4 md:p-6 lg:p-8 overflow-hidden"
+      drag="y" // Only allow vertical dragging
+      dragConstraints={constraintsRef}
+      dragElastic={0.2} // Bounciness (0-1)
+      dragTransition={{
+        bounceStiffness: 400,
+        bounceDamping: 20
+      }}
+      whileDrag={{ 
+        cursor: "grabbing",
+        boxShadow: "0 10px 25px -10px rgba(0,0,0,0.1)"
+      }}
     >
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -65,12 +81,12 @@ const Headerx = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-none text-white p-2 z-30 rounded-full"
       >
         <Image src={assets.arrowleft} alt="left arrow" className="w-10 h-10 rounded-full"/>
       </button>
-      <div className="absolute top-1/4 transform-translate-x-1/2 transform-translate-y-1/2 z-15 h-72 max-w-72">
-        <div className="h-52 max-w-52 bg-darkTheme/50 rounded-lg mb-3">
+      <div className="absolute top-1/4 transform-translate-x-1/2 transform-translate-y-1/2 z-15 h-72 max-w-80">
+        <div className="h-52 max-w-60 bg-darkTheme/50 rounded-lg mb-3">
             <p className='font-semibold text-white text-center text-xl max-w-2x mx-auto pt-5 px-1'>
             Your trusted barber, just around the corner.
             </p>
@@ -82,11 +98,11 @@ const Headerx = () => {
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
       >
         <Image src={assets.arrowright} alt="right arrow" className="w-10 h-10 rounded-full" />
       </button>
-    </div>
+    </motion.div>
   );
 };
 
