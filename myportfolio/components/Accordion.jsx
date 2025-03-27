@@ -1,4 +1,6 @@
 'use client000'
+import { assets, short_fade } from '@/assets/assets';
+import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
 
@@ -10,27 +12,39 @@ const Accordion = () => {
     {
       question: 'Gentlemen',
       answer: 'Short Fade: R35',
+      answerUrl: '/work-1.png',
       answer1: 'High Top Fade: R40',
-      answer2: 'Short Fade with Dye: R70'
+      answerUrl1: '/work-1.png',
+      answer2: 'Short Fade with Dye: R70',
+      answerUrl2: '/work-1.png'
 
     },
     {
       question: 'Ladies',
       answer: 'Trimming: R35',
+      answerUrl: '/work-2.png',
       answer1:'Fade Dye: From R40',
-      answer2: 'Beard Dye: R20'
+      answerUrl1: '/work-2.png',
+      answer2: 'Beard Dye: R20',
+      answerUrl2: '/work-2.png',
     },
     {
       question: 'Kids',
       answer: 'Trimming: R35',
+      answerUrl: '/work-3.png',
       answer1:'Fade Dye: From R40',
-      answer2: 'Beard Dye: R20'
+      answerUrl1: '/work-3.png',
+      answer2: 'Beard Dye: R20',
+      answerUrl2: '/work-3.png',
     },
     {
       question: 'Color and Trimming',
       answer: 'Trimming: R35',
+      answerUrl: '/work-4.png',
       answer1:'Fade Dye: From R40',
-      answer2: 'Beard Dye: R20'
+      answerUrl1: '/work-4.png',
+      answer2: 'Beard Dye: R20',
+      answerUrl2: '/work-4.png',
 
     }
   ]
@@ -64,12 +78,21 @@ const Accordion = () => {
               className={`grid transition-all duration-300 ease-in-out ${activeIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
             >
               <div className="overflow-hidden">
-                <div className="p-4 pt-0 text-gray-600">
+                <div className="p-4 pt-0 text-darkTheme ">
                   <div>
                     <ul>
-                        <li className=''>{item.answer}</li>
-                        <li className=''>{item.answer1}</li>
-                        <li className=''>{item.answer2}</li>
+                        <li className=''>
+                            <p>{item.answer}</p>
+                            <Image alt='first image' src={item.answerUrl} width="320" height="320" className='w-80 h-80'/>
+                        </li>
+                        <li className=''>
+                            <p>{item.answer1}</p>
+                            <Image alt='second image' src={item.answerUrl1} width="320" height="320" className='w-80 h-80'/>
+                        </li>
+                        <li className=''>
+                            <p>{item.answer2}</p>
+                            <Image alt='third image' src={item.answerUrl2} width="320" height="320" className='w-80 h-80'/>
+                        </li>
                     </ul>
                   </div>
 

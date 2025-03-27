@@ -112,12 +112,12 @@ export const short_fade = [
     {
         title: 'Mid Fade',
         description: 'R35',
-        bgImage: '/ladies.jpg',
+        bgImage1: '/ladies.jpg',
     },
     {
         title: 'Low Fade',
         description: 'R40',
-        bgImage: '/kids.jpg',
+        bgImage2: '/kids.jpg',
     },
 ]
 
