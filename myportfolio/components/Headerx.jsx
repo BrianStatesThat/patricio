@@ -48,25 +48,10 @@ const Headerx = () => {
   };
 
   return (
-    <motion.div
-      
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
+    <div
       className="pt-[70px] relative flex justify-center items-center mx-auto bg-neutral rounded-box sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-4 md:p-6 lg:p-8 overflow-hidden"
-      drag="y" // Only allow vertical dragging
-      ref={constraintsRef}
-      dragElastic={0.2} // Bounciness (0-1)
-      dragTransition={{
-        bounceStiffness: 400,
-        bounceDamping: 20
-      }}
-      whileDrag={{ 
-        cursor: "grabbing",
-        boxShadow: "0 10px 25px -10px rgba(0,0,0,0.1)"
-      }}
     >
       <div
-      drag dragConstraints={constraintsRef}
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
@@ -104,7 +89,7 @@ const Headerx = () => {
       >
         <Image src={assets.arrowright} alt="right arrow" className="w-10 h-10 rounded-full" />
       </button>
-    </motion.div>
+    </div>
   );
 };
 
