@@ -1,5 +1,4 @@
 "use client"
-import * as motion from "motion/react-client";
 import React, { useState, useRef } from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
@@ -7,7 +6,6 @@ import Image from "next/image";
 
 
 const Headerx = () => {
-  const constraintsRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
 
