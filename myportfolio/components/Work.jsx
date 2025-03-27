@@ -4,15 +4,15 @@ import { workData, assets } from '@/assets/assets';
 
 const Work = ({isDarkMode}) => {
   return (
-    <div id='work' className='w-full px-[12%] pt-[40px] pb-[10px] scroll-mt-20'>
+    <div id='work' className='mx-auto flex flex-col items-center justify-center w-full px-[12%] pt-[40px] pb-[10px] scroll-mt-20'>
         <h2 className='font-regular text-center text-4xl font-Ovo'>Haircuts and Styles</h2>
         <p className='font-regular text-center max-w-2x mx-auto mt-5 mb-12 font-Ovo'>
         Check out our classy haircuts and choose one that will best suit you and your style.
         </p>
 
-        <div className='grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
+        <div className='place-items-center  min-w-[283px] grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
             {workData.map((project, index)=>(
-                <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
+                <div className='mx-auto flex flex-col items-center justify-center min-w-[283px] aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
                  key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div className='bg-white w-10/12 rounded-md absolute bottom-5
                     left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500
