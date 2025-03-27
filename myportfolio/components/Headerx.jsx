@@ -49,11 +49,12 @@ const Headerx = () => {
 
   return (
     <motion.div
+      
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       className="pt-[70px] relative flex justify-center items-center mx-auto bg-neutral rounded-box sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-4 md:p-6 lg:p-8 overflow-hidden"
       drag="y" // Only allow vertical dragging
-      dragConstraints={constraintsRef}
+      ref={constraintsRef}
       dragElastic={0.2} // Bounciness (0-1)
       dragTransition={{
         bounceStiffness: 400,
@@ -65,6 +66,7 @@ const Headerx = () => {
       }}
     >
       <div
+      drag dragConstraints={constraintsRef}
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >

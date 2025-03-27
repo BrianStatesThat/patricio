@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Navicons from "@/components/Navicons";
 import { useEffect,useState } from "react";
+import Footer from "@/components/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({ children}) {
       `}>
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
         {children}
+        <Footer isDarkMode={isDarkMode} />
         <Navicons isDarkMode={isDarkMode}/>
       </body>
     </html>

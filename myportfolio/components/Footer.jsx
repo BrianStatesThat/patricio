@@ -4,9 +4,9 @@ import React from 'react'
 
 const Footer = ({isDarkMode}) => {
   return (
-    <div className='mt-20 pt-[10px] pb-[84px]'>
+    <div className='mt-5 pt-[10px] pb-[84px]'>
       <div className='text-center '>
-        <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='logo' 
+        <Image src={isDarkMode ? assets.logo.dark: assets.logo} alt='logo' 
         className='w-36 mx-auto mb-2'/>
 
         <div className='w-max flex items-center gap-2 mx-auto'>

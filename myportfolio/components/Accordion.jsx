@@ -55,16 +55,19 @@ const Accordion = () => {
 
   return (
     <div className="max-w-xl mx-auto pt-[64px] pb-[84px] px-6">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Services Catalogue</h2>
+      <h2 className="text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white">Services Catalogue</h2>
+      <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
+      Need a fresh cut, a clean trim or bold colour? We do sharp fades, neat beard lineups and stylish dye jobs. Walk in, leave looking your best. Good vibes, great cuts.
+      </p>
       <div className="space-y-4">
         {items.map((item, index) => (
-          <div key={index} className=" border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+          <div key={index} className=" border dark:border-darkTheme rounded-md overflow-hidden shadow-sm">
             <button
               className={`w-full flex justify-between items-center p-4 text-left transition-colors ${activeIndex === index ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
               onClick={() => toggleAccordion(index)}
               aria-expanded={activeIndex === index}
             >
-              <span className="font-bold text-gray-900">{item.question}</span>
+              <span className={`font-regular text-2xl ${activeIndex === index ? 'text-darkTheme':'dark:text-white text-darkTheme'}`}>{item.question}</span>
               <svg
                 className={`w-5 h-5 text-gray-500 transform transition-transform ${activeIndex === index ? 'rotate-180' : ''}`}
                 fill="none"
@@ -78,7 +81,7 @@ const Accordion = () => {
               className={`grid transition-all duration-300 ease-in-out ${activeIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
             >
               <div className="overflow-hidden">
-                <div className="p-4 pt-0 text-darkTheme ">
+                <div className="font-regular text-xl p-4 pt-0 text-darkTheme dark:text-white">
                   <div>
                     <ul>
                         <li className=''>

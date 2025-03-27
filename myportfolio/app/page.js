@@ -17,7 +17,6 @@ export default function Home({isDarkMode}) {
       <Subscription isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Ratings isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
     </>
   );
 }
