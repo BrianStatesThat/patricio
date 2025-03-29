@@ -47,7 +47,9 @@ const Headerx = () => {
 
   return (
     <div
-      className="pt-[70px] relative flex justify-center items-center mx-auto bg-neutral rounded-box sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-4 md:p-6 lg:p-8 overflow-hidden"
+      onTouchStart={handleTouchStart}
+       onTouchEnd={handleTouchEnd}
+      className="overflow-x-hidden pt-[70px] relative flex justify-center items-center mx-auto bg-neutral rounded-box sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl p-4 md:p-6 lg:p-8 overflow-hidden"
     >
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -58,7 +60,7 @@ const Headerx = () => {
             key={index}
             className="carousel-item min-w-full flex justify-center items-center"
           >
-            <img src={src} alt={`Slide ${index}`} className="rounded-lg w-full h-[400px] md:h-auto" />
+            <img src={src} alt={`Slide ${index}`} className="rounded-lg w-full h-[400px] md:h-auto overflow-x-hidden"/>
           </div>
         ))}
       </div>
@@ -83,7 +85,7 @@ const Headerx = () => {
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-none text-white p-2 z-25 rounded-full"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-none text-white p-2 z-30 rounded-full"
       >
         <Image src={assets.arrowright} alt="right arrow" className="w-10 h-10 rounded-full" />
       </button>

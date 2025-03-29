@@ -41,7 +41,7 @@ export default function RootLayout({ children}) {
   return (
     <html lang="en" className="scroll-smooth" >
       <body
-        className={`${outfit.className} ${ovo.className} intialiased leading-8 overflow-x-hidden dark:bg-darkTheme
+        className={`${outfit.className} ${ovo.className} max-w-full intialiased leading-8 overflow-x-hidden dark:bg-darkTheme
         dark:text-white
       `}>
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>

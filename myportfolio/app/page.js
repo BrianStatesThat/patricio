@@ -11,12 +11,12 @@ import Ratings from "@/components/Ratings";
 export default function Home({isDarkMode}) {
 
   return (
-    <>
+    <div className="max-w-ful overflow-hidden">
       <Headerx isDarkMode={isDarkMode}/>
       <Services isDarkMode={isDarkMode} />
       <Subscription isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Ratings isDarkMode={isDarkMode} />
-    </>
+    </div>
   );
 }
