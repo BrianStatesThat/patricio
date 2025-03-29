@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { workData, assets } from '@/assets/assets';
+import Link from 'next/link';
 
 const Work = ({isDarkMode}) => {
   return (
@@ -31,12 +32,12 @@ const Work = ({isDarkMode}) => {
             ))}
         </div>
 
-        <a href="" className='font-regular w-max flex itmes-center justify-center gap-2 text-gray-700
+        <Link href="/services" className='font-regular w-max flex itmes-center justify-center gap-2 text-gray-700
         border-[0.5px] border-gray-700 rounded-md py-3 px-10 mx-auto mt-[80px] mb-[0] hover:bg-lightHover duration-500
         dark:text-white dark:border-white dark:hover:bg-darkHover'>
             MORE<Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='right arrow'
             className='w-4 h-4 py-auto my-auto' />
-        </ a>
+        </ Link>
 
     </div>
   )
