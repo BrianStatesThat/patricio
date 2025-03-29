@@ -67,7 +67,7 @@ const Accordion = () => {
               onClick={() => toggleAccordion(index)}
               aria-expanded={activeIndex === index}
             >
-              <span className={`font-regular text-2xl ${activeIndex === index ? 'text-darkTheme dark:text-darkTheme':'dark:text-darkTheme text-darkTheme'}`}>{item.question}</span>
+              <span className={`font-semibold text-2xl ${activeIndex === index ? 'text-darkTheme dark:text-darkTheme':'dark:text-darkTheme text-darkTheme'}`}>{item.question}</span>
               <svg
                 className={`w-5 h-5 text-gray-500 transform transition-transform ${activeIndex === index ? 'rotate-180' : ''}`}
                 fill="none"
