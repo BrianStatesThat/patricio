@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div id='services' className='mx-auto flex flex-col items-center justify-center w-full px-[12%] scroll-mt-20 pt-[64px] pb-[20px]'>
         <h4 className='text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white'>See how we can help you</h4>
-        <h2 className='text-center text-lg font-Ovo'>Feel the pulse of the iKasi, served up quick and real.</h2>
+        <h2 className='text-center text-lg font-Ovo'>Feel the pulse of iKasi, served up quick and real.</h2>
         <div className='grid sm:grid-cols-auto md:grid-cols-4  gap-6 my-10 '>
           {serviceData.map(({icon, title, description, link}, index)=>(
             <div key={index}
