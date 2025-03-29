@@ -5,7 +5,7 @@ import { workData, assets } from '@/assets/assets';
 const Work = ({isDarkMode}) => {
   return (
     <div id='work' className='mx-auto flex flex-col items-center justify-center w-full px-[12%] pt-[40px] pb-[10px] scroll-mt-20'>
-        <h2 className='font-regular text-center text-4xl font-Ovo'>Haircuts and Styles</h2>
+        <h2 className='text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white'>Haircuts and Styles</h2>
         <p className='font-regular text-center max-w-2x mx-auto mt-5 mb-12 font-Ovo'>
         Check out our classy haircuts and choose one that will best suit you and your style.
         </p>

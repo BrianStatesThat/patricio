@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className='w-full px-[12%] scroll-mt-20 overflow-x-hidden pt-[64px] pb-[84px]'>
-        <h2 className='text-center mb-2 text-4xl font-regular'>Contact Form</h2>
+        <h2 className='text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white'>Contact Form</h2>
 
         <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
         Have a question or feedback? Fill out the form below to share your thoughts or make an inquiry.

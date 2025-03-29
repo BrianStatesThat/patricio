@@ -6,7 +6,7 @@ const Locate = () => {
     return (
         <div className='flex flex-col w-full pt-[64px]  px-1 item-center justify-center overflow-x-hidden'>
             <div className=' flex flex-col items-center justify-center w-screen rounded-lg mx-auto md:w-[300px] lg:w-[600px] xl:w-[800px] overflow-x-hidden'>
-            <h2 className='font-regular text-center text-4xl'>Locate Us</h2>
+            <h2 className='text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white'>Locate Us</h2>
             <p className='font-regular text-center max-w-2x mx-auto pt-5 px-1'>
             Find us at Patrick's Barber Shop in the heart of Boxongo! We're here to keep you looking sharp and stylish.
              Conveniently located for all your grooming needs - swing by and let us take care of your fresh cut today!
