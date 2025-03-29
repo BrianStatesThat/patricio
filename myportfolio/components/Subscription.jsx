@@ -1,8 +1,8 @@
 import React from 'react';
 //code inspired by https://uiverse.io/Yaya12085/empty-horse-27
 // Component sourced from UI Verse (https://uiverse.io)
-// License: MIT (or as specified)
-// Modifications: [if any modifications were made]
+// License: MIT
+// Modifications: Changed fonts and colors to suit theme of the website
 const Subscription = () => {
   return (
     <div className="flex justify-center overflow-x-hidden">

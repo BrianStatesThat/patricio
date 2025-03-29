@@ -20,7 +20,7 @@ function Navicons({isDarkMode}) {
         <div className='w-full fixed flex z-50 items-center justify-between gap-6 bottom-0 overflow-x-hidden'>
             <ul className='flex w-full items-center gap-6 justify-between
             bg-white text-black font-Ovo text-lg 
-            lg:gap-8 px-4 py-3 dark:bg-darkHover dark:text-white'>
+            lg:gap-8 px-8 py-3 dark:bg-darkHover dark:text-white'>
               <li className='flex flex-col items-center justify-between gap-1 h-[60px] '>
                     <Link href="/">
                     <Image src={isDarkMode? assets.home_dark : assets.home_light} alt='' 
@@ -56,7 +56,7 @@ function Navicons({isDarkMode}) {
             <ul ref={sideMenuRef}
             className='flex flex-col gap-4 py-20
             px-10 fixed -right-64  top-0 bottom-0 w-64 z-50 h-screen
-            bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'
+            bg-darkHover/70 backdrop-blur-md transition duration-500 text-white dark:bg-darkHover/70 dark:backdrop-blur-md dark:bg-darkHover dark:text-white'
             >
                 <div className='absolute right-6 top-6'
                 onClick={closeMenu}
@@ -67,20 +67,20 @@ function Navicons({isDarkMode}) {
                 </div>
 
                 <li>
-                    <Link onClick={closeMenu} href="/services">
+                    <Link onClick={closeMenu} href="/services" className="py-5 font-bold text-xl ">
                         Services Catalogue
                     </Link>
                 </li>
-                <li><a onClick={closeMenu} href="#about">Our Story</a></li>
-                <li><a onClick={closeMenu} href="#services">Academy</a></li>
+                <li><a className="py-5 font-bold text-xl " onClick={closeMenu} href="#about">Our Story</a></li>
+                <li><a className="py-5 font-bold text-xl " onClick={closeMenu} href="#services">Academy</a></li>
                 <li>
-                    <a onClick={closeMenu} href="#top">
+                    <a className="py-5 font-bold text-xl " onClick={closeMenu} href="#top">
                         Own-A-Franchise
                     </a>
                 </li>
                 <li>
-                    <Link onClick={closeMenu} href='/contact'>
-                        <p className='font-regular'>Contact Us</p>
+                    <Link className="py-5 font-bold text-xl " onClick={closeMenu} href='/contact'>
+                        Contact Us
                     </Link>
                 </li>
             </ul>

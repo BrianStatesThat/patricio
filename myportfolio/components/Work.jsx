@@ -11,7 +11,7 @@ const Work = ({isDarkMode}) => {
         Check out our classy haircuts and choose one that will best suit you and your style.
         </p>
 
-        <div className='place-items-center  min-w-[283px] grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
+        <div className='place-items-center bg-darkHover/70 backdrop-blur-md text-darkTheme min-w-[283px] grid sm:grid-cols-auto md:grid-cols-4 my-10 gap-5 dark:text-black'>
             {workData.map((project, index)=>(
                 <div className='mx-auto flex flex-col items-center justify-center min-w-[283px] aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
                  key={index} style={{backgroundImage: `url(${project.bgImage})`}}>
