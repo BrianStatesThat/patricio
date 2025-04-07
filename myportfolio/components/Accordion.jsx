@@ -12,39 +12,39 @@ const Accordion = () => {
     {
       question: 'Gentlemen',
       answer: 'Short Fade: R35',
-      answerUrl: '/work-1.png',
+      answerUrl: '/man1.jpg',
       answer1: 'High Top Fade: R40',
-      answerUrl1: '/work-1.png',
+      answerUrl1: '/man2.jpg',
       answer2: 'Short Fade with Dye: R70',
-      answerUrl2: '/work-1.png'
+      answerUrl2: '/man.jpg'
 
     },
     {
       question: 'Ladies',
       answer: 'Trimming: R35',
-      answerUrl: '/work-2.png',
+      answerUrl: '/ladies.jpg',
       answer1:'Fade Dye: From R40',
-      answerUrl1: '/work-2.png',
+      answerUrl1: '/ladies.jpg',
       answer2: 'Beard Dye: R20',
-      answerUrl2: '/work-2.png',
+      answerUrl2: '/ladies.jpg',
     },
     {
       question: 'Kids',
-      answer: 'Trimming: R35',
-      answerUrl: '/work-3.png',
-      answer1:'Fade Dye: From R40',
-      answerUrl1: '/work-3.png',
-      answer2: 'Beard Dye: R20',
-      answerUrl2: '/work-3.png',
+      answer: 'Short Fade: R35',
+      answerUrl: '/boy2.jpg',
+      answer1:'Short Fade with Dye: R70',
+      answerUrl1: '/boy1.jpg',
+      answer1: 'High Top Fade: R40',
+      answerUrl2: '/kids.jpg',
     },
     {
       question: 'Color and Trimming',
       answer: 'Trimming: R35',
-      answerUrl: '/work-4.png',
+      answerUrl: '/color.jpg',
       answer1:'Fade Dye: From R40',
-      answerUrl1: '/work-4.png',
+      answerUrl1: '/color.jpg',
       answer2: 'Beard Dye: R20',
-      answerUrl2: '/work-4.png',
+      answerUrl2: '/man4.jpg',
 
     }
   ]

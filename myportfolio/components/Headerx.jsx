@@ -10,8 +10,8 @@ const Headerx = () => {
   const [startX, setStartX] = useState(0);
 
   const images = [
-    "/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg",
-    "/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg",
+    "/man.jpg",
+    "/boy1.jpg",
     "/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg",
     "/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg",
     "/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg",
@@ -73,7 +73,7 @@ const Headerx = () => {
         <Image src={assets.arrowleft} alt="left arrow" className="w-10 h-10 rounded-full"/>
       </button>
       <div className="absolute top-1/4 transform-translate-x-1/2 transform-translate-y-1/2 z-15 h-72 max-w-80">
-        <div className=" bg-darkHover/70 backdrop-blur-md dark:bg-darkHover/70 dark:backdrop-blur-md transition duration-500 text-white dark:bg-darkHover dark:text-white h-52 max-w-60 rounded-lg mb-3">
+        <div className=" bg-darkHover/20 backdrop-blur-sm dark:bg-darkHover/20 dark:backdrop-blur-sm transition duration-500 text-white dark:bg-darkHover dark:text-white h-52 max-w-60 rounded-md mb-3">
             <p className='font-semibold text-white text-center text-xl max-w-2x mx-auto pt-5 px-1'>
             Your trusted barber, just around the corner.
             </p>

@@ -19,7 +19,7 @@ import profile_img from './myface.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
-import moon_icon from './icons8-moon-100.png';
+import moon_icon from './mother.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
 import arrow_icon_dark from './arrow-icon-dark.png';
@@ -49,8 +49,24 @@ import where from './where.png';
 import arrowleft from './icons8-arrow-left.png';
 import arrowright from './icons8-arrow-right.png';
 import elon from './elon.jpg';
+import homedark from './homedark.png';
+import homelight from './homelight.png';
+import bookdark from './bookdark.png';
+import booklight from './booklight.png';
+import locatedark from './locatedark.png';
+import locatelight from './locatelight.png';
+import menulight from './menulight.png';
+import menudark from './menudark.png';
 
 export const assets = {
+    homelight,
+    homedark,
+    booklight,
+    bookdark,
+    locatedark,
+    locatelight,
+    menulight,
+    menudark,
     elon,
     arrowleft,
     arrowright,
