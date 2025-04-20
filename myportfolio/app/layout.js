@@ -1,4 +1,5 @@
 'use client';
+import { Analytics } from "@vercel/analytics/react"
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -48,6 +49,7 @@ export default function RootLayout({ children}) {
         {children}
         <Footer isDarkMode={isDarkMode} />
         <Navicons isDarkMode={isDarkMode}/>
+        <Analytics/>
       </body>
     </html>
   );
