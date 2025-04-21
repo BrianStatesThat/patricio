@@ -34,7 +34,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
          ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:shadow-sm  dark:bg-opacity-50 dark:backdrop-blur-lg  dark:bg-darkTheme dark:shadow-white/20": "bg-white dark:bg-darkTheme"}`}>
 
             <button onClick={()=> setIsDarkMode(prev => !prev)}>
-                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-[40px] h-[40px]'/>
+                    <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-[36px] h-[36px]'/>
             </button>
             
             <a href="#top">

@@ -36,11 +36,11 @@ function Navicons({isDarkMode}) {
                     </Link>
                 </li>
                 <li className='flex flex-col items-center justify-between  gap-1 h-[60px]'>
-                    <a href="#work">
+                    <Link href="/book">
                     <Image src={isDarkMode? assets.bookdark : assets.booklight} alt=''
                     className='w-8 h-8 flex items-center justify-center'/>
                     <p className='font-regular text-center w-8 h-8 flex items-center justify-center'>Book</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='flex flex-col items-center justify-between gap-1 h-[60px]'>
                     <button onClick={openMenu}>
