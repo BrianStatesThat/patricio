@@ -56,7 +56,7 @@ const Accordion = () => {
 
   return (
     <div className="max-w-xl mx-auto pt-[64px] pb-[84px] px-6">
-      <BookOpen className='text-darkTheme dark:text-white mx-auto justify-center items-center w-24 h-24'/>
+      <BookOpen className='text-darkTheme dark:text-white mx-auto justify-center items-center w-12 h-12'/>
       <h2 className="text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white">Services Catalogue</h2>
       <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
       Need a fresh cut, a clean trim or bold colour? We do sharp fades, neat beard lineups and stylish dye jobs. Walk in, leave looking your best. Good vibes, great cuts.
