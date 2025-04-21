@@ -1,5 +1,6 @@
 'use client000'
 import { assets, short_fade } from '@/assets/assets';
+import { BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
@@ -55,6 +56,7 @@ const Accordion = () => {
 
   return (
     <div className="max-w-xl mx-auto pt-[64px] pb-[84px] px-6">
+      <BookOpen className='text-darkTheme dark:text-white mx-auto justify-center items-center w-24 h-24'/>
       <h2 className="text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white">Services Catalogue</h2>
       <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
       Need a fresh cut, a clean trim or bold colour? We do sharp fades, neat beard lineups and stylish dye jobs. Walk in, leave looking your best. Good vibes, great cuts.
@@ -86,15 +88,15 @@ const Accordion = () => {
                     <ul>
                         <li className=''>
                             <p>{item.answer}</p>
-                            <Image alt='first image' src={item.answerUrl} width="320" height="320" className='w-80 h-80'/>
+                            <Image alt='first image' src={item.answerUrl} width="300" height="300" className='w-80 h-80'/>
                         </li>
                         <li className=''>
                             <p>{item.answer1}</p>
-                            <Image alt='second image' src={item.answerUrl1} width="320" height="320" className='w-80 h-80'/>
+                            <Image alt='second image' src={item.answerUrl1} width="300" height="300" className='w-80 h-80'/>
                         </li>
                         <li className=''>
                             <p>{item.answer2}</p>
-                            <Image alt='third image' src={item.answerUrl2} width="320" height="320" className='w-80 h-80'/>
+                            <Image alt='third image' src={item.answerUrl2} width="300" height="300" className='w-80 h-80'/>
                         </li>
                     </ul>
                   </div>

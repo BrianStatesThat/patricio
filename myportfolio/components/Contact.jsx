@@ -1,6 +1,7 @@
 import { assets } from '@/assets/assets'
 import React, { useState } from 'react';
 import Image from 'next/image'; 
+import { MailIcon } from 'lucide-react';
 
 const Contact = () => {
   const [result, setResult] = useState("") ;
@@ -30,6 +31,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className='w-full px-[12%] scroll-mt-20 overflow-x-hidden pt-[64px] pb-[84px]'>
+        <MailIcon className='text-darkTheme dark:text-white mx-auto justify-center items-center w-24 h-24'/>
         <h2 className='text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white'>Contact Form</h2>
 
         <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
