@@ -29,7 +29,7 @@ const Book = () => {
         <div
           className="calendly-inline-widget overflow-hidden"
           data-url="https://calendly.com/mbspeelman/30min?hide_event_type_details=1"
-          style={{ minWidth: '400px', height: '800px' }}
+          style={{ minWidth: '360px', height: '800px' }}
         ></div>
       </div>
     </div>
