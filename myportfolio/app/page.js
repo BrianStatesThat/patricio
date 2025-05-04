@@ -11,7 +11,7 @@ import Ratings from "@/components/Ratings";
 export default function Home({isDarkMode}) {
 
   return (
-    <div className="max-w-ful overflow-hidden">
+    <div className="max-w-full overflow-hidden">
       <Headerx isDarkMode={isDarkMode}/>
       <Services isDarkMode={isDarkMode} />
       <Subscription isDarkMode={isDarkMode} />

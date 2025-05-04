@@ -55,7 +55,7 @@ const Accordion = () => {
   }
 
   return (
-    <div className="max-w-xl mx-auto pt-[64px] pb-[84px] px-6">
+    <div className="flex flex-col mx-auto justify-center items-center w-full scroll-mt-20 px-[12%] overflow-x-hidden pt-[64px] pb-[84px]">
       <BookOpen className='text-darkTheme dark:text-white mx-auto justify-center items-center w-12 h-12'/>
       <h2 className="text-center text-4xl font-bold mb-6 text-darkTheme dark:text-white">Services Catalogue</h2>
       <p className='text-center max-w-2x mx-auto mt-5 mb-12 font-regular'>
@@ -88,15 +88,15 @@ const Accordion = () => {
                     <ul>
                         <li className=''>
                             <p>{item.answer}</p>
-                            <Image alt='first image' src={item.answerUrl} width="300" height="300" className='w-80 h-80'/>
+                            <Image alt='first image' src={item.answerUrl} width="250" height="250" className='w-80 h-80'/>
                         </li>
                         <li className=''>
                             <p>{item.answer1}</p>
-                            <Image alt='second image' src={item.answerUrl1} width="300" height="300" className='w-80 h-80'/>
+                            <Image alt='second image' src={item.answerUrl1} width="250" height="250" className='w-80 h-80'/>
                         </li>
                         <li className=''>
                             <p>{item.answer2}</p>
-                            <Image alt='third image' src={item.answerUrl2} width="300" height="300" className='w-80 h-80'/>
+                            <Image alt='third image' src={item.answerUrl2} width="250" height="250" className='w-80 h-80'/>
                         </li>
                     </ul>
                   </div>
